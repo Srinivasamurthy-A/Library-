@@ -118,7 +118,7 @@
 
             if (title && author) {
                 var newBook = document.createElement("li");
-                newBook.innerHTML = <strong>${title}</strong> written by ${author} <button style="background-color: #db0909;"onclick="removeBook(this.parentNode)">Remove</button>;
+                newBook.innerHTML = `<strong>${title}</strong> written by ${author} <button style="background-color: #db0909;"onclick="removeBook(this.parentNode)">Remove</button>`;
 
                 document.getElementById("bookList").appendChild(newBook);
 
